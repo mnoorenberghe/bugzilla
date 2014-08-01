@@ -500,11 +500,12 @@
       editable = 1
       accesskey = "u"
     %]
-    <td>
+    <td id="bz_url_td">
       [% IF bug.check_can_change_field("bug_file_loc", 0, 1) %]
         <span id="bz_url_edit_container" class="bz_default_hidden"> 
         [% IF is_safe_url(bug.bug_file_loc) %]
            <a href="[% bug.bug_file_loc FILTER html %]" target="_blank"
+              id="bz_url_edit_link"
               title="[% bug.bug_file_loc FILTER html %]">
              [% bug.bug_file_loc FILTER html %]</a>
         [% ELSE %]
