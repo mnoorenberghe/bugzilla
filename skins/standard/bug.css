@@ -228,6 +228,24 @@ table#flags {
     float: right;
 }
 
+#bz_url_td {
+    /* TODO: not sure why this is making this work */
+    max-width: 0px;
+}
+
+#bz_url_edit_container {
+    vertical-align: top;
+}
+
+#bz_url_edit_link {
+    display: inline-block;
+    max-width: calc(100% - 6ch);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
 .text_input, .bz_userfield, #keywords_container, #tag_container {
     width: 100%;
 }
